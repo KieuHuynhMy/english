@@ -1,0 +1,19 @@
+<%- include('../partials/header') -%>
+<div class="container">
+  <h1 class="text-center mb-5">Test</h1>
+  <div class="row">
+    <div class="col-12 col-md-6 col-xs-12">
+      <% for(question of questions) { %> 
+        - <%= question.title %>
+      <pre>
+              <strong>A.</strong> <%= question.A  %>  
+              <strong>B.</strong> <%= question.B  %>     
+              <strong>C.</strong> <%= question.C  %>     
+              <strong>D.</strong> <%= question.D  %>
+              </pre
+      >
+      <% } %>
+    </div>
+  </div>
+</div>
+<%- include('../partials/footer') -%>

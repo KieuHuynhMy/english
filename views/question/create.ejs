@@ -1,0 +1,34 @@
+<%- include('../partials/header') -%>
+
+    <div class="container">
+        <h2 class="text-center">Add question</h2>
+        <form action="/question" method="POST">
+            <div>
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" name="title" id="title" />
+            </div>
+            <div class="">
+                <label for="A" class="form-label">A</label>
+                <input type="text" class="form-control" name="A" id="A" />
+            </div>
+            <div class="">
+                <label for="B" class="form-label">B</label>
+                <input type="text" class="form-control" name="B" id="B" />
+            </div>
+            <div class="">
+                <label for="C" class="form-label">C</label>
+                <input type="text" class="form-control" name="C" id="C" />
+            </div>
+            <div class="">
+                <label for="D" class="form-label">D</label>
+                <input type="text" class="form-control" name="D" id="D" />
+            </div>
+            <div class="">
+                <label for="answer" class="form-label">Answer: </label>
+                <input type="text" class="form-control" name="answer" id="answer" />
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>    
+
+    <%- include('../partials/footer') -%>
